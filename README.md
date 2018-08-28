@@ -1,26 +1,28 @@
 # Lab 1: Linked list in C Programming
+## Due: Thursday, Sept 6, 11:59 PM
 
 This first lab assignment is for aimed to give you a heads up on the
 low-level semantics of the C programming language that you will be using
 throughout this course.
+
+## Fork & Clone instructions
+**First make sure you fork the CS230/lab1 repository to your private namespace!**
+If you don't you won't be able to submit your work.
+Once you have your private repo (your username is reflected in the URL; check the Gitlab intro slide on KLMS), you may clone your private repo.
+Also, make sure you have added your SSH key to the GitLab Web UI (refer to the KLMS slides).
+
+```
+$ git clone ssh://git@gitlab-edu.kaist.ac.kr:10022/cs[your_student_id]/lab1.git
+```
+
+## 1. Introduction
 
 For this lab, your task is to fill in the skeleton code and implement the doubly linked list.
 You **must only** fill in the skeleton code in the `list.c` file.
 You may modify the `test.c` file and add the `iterate_print_keys()` function to help with your debugging,
 however you must make sure your tests work with the original `test.c` file.
 
-## Memory Management
-
-You will need to dynamically allocate memory for new nodes using the `malloc()` function, and free any deleted nodes using the `free()` function.
-
-You can access the reference for the two functions using the following commands:
-
-```
-$ man malloc
-$ man free
-```
-
-## Doubly Linked List
+## 2. Doubly Linked List
 
 For this lab, you will need to implement a doubly linked list, where there are two nodes, `head` and the `tail` node that are
 reference nodes. They do not hold any meaningful `key` values. The `head` and `tail`, nodes represent the beginning and the end
@@ -32,7 +34,18 @@ and end at the tail.
 The functions that need to be implemented are provided in the `list.c` file.
 The requirements of each skeleton function is described in the block comment above the skeleton function.
 
-## Test cases must be met
+## 3. Memory Management
+
+You will need to dynamically allocate memory for new nodes using the `malloc()` function, and free any deleted nodes using the `free()` function.
+
+You can access the reference for the two functions using the following commands:
+
+```
+$ man malloc
+$ man free
+```
+
+## 4. Test cases must be met
 
 All the test cases implemented in the `test.c` file must be met. As of this writing, there are eight test cases.
 Make sure to satisfy all of the test cases.
@@ -58,7 +71,7 @@ using the following command.
 $ git checkout handout test.c
 ```
 
-## Hand in Instructions
+## 5. Hand in Instructions
 
 Once you have finished your implementation and your test cases have passed, you can submit your code.
 Make sure that you `add` the `list.c` file, and `commit` your changes.
