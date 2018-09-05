@@ -20,6 +20,11 @@ ishow: ishow.c
 btestexplicit:
 	$(CC) $(CFLAGS) $(LIBS) -o btest bits.c btest.c decl.c tests.c 
 
+handin:
+	git tag -a -f submit -m "Submitting Lab"
+	git push
+	git push --tags -f
+
 clean:
 	rm -f *.o btest fshow ishow *~
 
