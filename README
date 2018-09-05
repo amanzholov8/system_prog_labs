@@ -121,7 +121,7 @@ To hand in your lab, execute the following command
   unix> make handin
 
 This step will push your local commits onto your GitLab remote repository.
-Make sure that your remote repository is your forked version of the lab1.
+Make sure that your remote repository is your forked version of the lab2.
 Your remote URL should be something like
 ssh://git@gitlab-edu.kaist.ac.kr:10022/[Your_user_name]/lab2.git.
 You can check your remote url using the following command:
