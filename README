@@ -1,5 +1,5 @@
 ***********************
-The CS:APP Data Lab
+The CS230 Data Lab
 Directions to Students
 ***********************
 
@@ -108,6 +108,29 @@ Examples:
 Btest does not check your code for compliance with the coding
 guidelines.  Use dlc to do that.
 
+Once you have finished your implementation and your test cases have passed, you can submit your code.
+It's similar to what you have done in Lab1. Make sure that you add the bits.c file, and commit your changes.
+You can do so with the following commands
+
+  unix> git add bits.c
+  unix> git commit -m "Your commit mesage"
+
+Execute $ git status to make sure that you do not have any uncommitted changes to the bits.c file.
+To hand in your lab, execute the following command
+
+  unix> make handin
+
+This step will push your local commits onto your GitLab remote repository.
+Make sure that your remote repository is your forked version of the lab1.
+Your remote URL should be something like
+ssh://git@gitlab-edu.kaist.ac.kr:10022/[Your_user_name]/lab2.git.
+You can check your remote url using the following command:
+
+  unix> git remote -v
+
+Check the tags section in the GitLab Web interface to see if your latest code has been pushed onto the server.
+The URL to check your tags is https://gitlab-edu.kaist.ac.kr/[Your_user_name]/lab2/tags.
+ 
 *******************
 3. Helper Programs
 *******************
