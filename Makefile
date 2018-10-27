@@ -17,7 +17,9 @@ all: $(FILES)
 # Handin your work
 ##################
 handin:
-	cp tsh.c $(HANDINDIR)/$(TEAM)-$(VERSION)-tsh.c
+	git tag -a -f submit -m "Submitting Lab"
+	git push
+	git push --tags -f
 
 
 ##################
@@ -96,9 +98,4 @@ rtest16:
 # clean up
 clean:
 	rm -f $(FILES) *.o *~
-
-handin:
-	git tag -a -f submit -m "Submitting Lab"
-	git push
-	git push --tags -f
 
