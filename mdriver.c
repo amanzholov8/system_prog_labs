@@ -147,7 +147,6 @@ int main(int argc, char **argv)
     stats_t *mm_stats = NULL;  /* mm (i.e. student) stats for each trace */
     speed_t speed_params;      /* input parameters to the xx_speed routines */ 
 
-    int team_check = 1;  /* If set, check team structure (reset by -a) */
     int run_libc = 0;    /* If set, run libc malloc (set by -l) */
     int autograder = 0;  /* If set, emit summary info for autograder (-g) */
 
@@ -158,7 +157,7 @@ int main(int argc, char **argv)
     /* 
      * Read and interpret the command line arguments 
      */
-    while ((c = getopt(argc, argv, "f:t:hvVgal")) != EOF) {
+    while ((c = getopt(argc, argv, "f:t:hvVgl")) != EOF) {
         switch (c) {
 	case 'g': /* Generate summary info for the autograder */
 	    autograder = 1;
@@ -178,9 +177,6 @@ int main(int argc, char **argv)
 	    if (tracedir[strlen(tracedir)-1] != '/') 
 		strcat(tracedir, "/"); /* path always ends with "/" */
 	    break;
-        case 'a': /* Don't check team structure */
-            team_check = 0;
-            break;
         case 'l': /* Run libc malloc */
             run_libc = 1;
             break;
@@ -199,32 +195,6 @@ int main(int argc, char **argv)
         }
     }
 	
-    /* 
-     * Check and print team info 
-     */
-    if (team_check) {
-	/* Students must fill in their team information */
-	if (!strcmp(team.teamname, "")) {
-	    printf("ERROR: Please provide the information about your team in mm.c.\n");
-	    exit(1);
-	} else
-	    printf("Team Name:%s\n", team.teamname);
-	if ((*team.name1 == '\0') || (*team.id1 == '\0')) {
-	    printf("ERROR.  You must fill in all team member 1 fields!\n");
-	    exit(1);
-	} 
-	else
-	    printf("Member 1 :%s:%s\n", team.name1, team.id1);
-
-	if (((*team.name2 != '\0') && (*team.id2 == '\0')) ||
-	    ((*team.name2 == '\0') && (*team.id2 != '\0'))) { 
-	    printf("ERROR.  You must fill in all or none of the team member 2 ID fields!\n");
-	    exit(1);
-	}
-	else if (*team.name2 != '\0')
-	    printf("Member 2 :%s:%s\n", team.name2, team.id2);
-    }
-
     /* 
      * If no -f command line arg, then use the entire set of tracefiles 
      * defined in default_traces[]
@@ -1004,9 +974,8 @@ void malloc_error(int tracenum, int opnum, char *msg)
  */
 static void usage(void) 
 {
-    fprintf(stderr, "Usage: mdriver [-hvVal] [-f <file>] [-t <dir>]\n");
+    fprintf(stderr, "Usage: mdriver [-hvVl] [-f <file>] [-t <dir>]\n");
     fprintf(stderr, "Options\n");
-    fprintf(stderr, "\t-a         Don't check the team structure.\n");
     fprintf(stderr, "\t-f <file>  Use <file> as the trace file.\n");
     fprintf(stderr, "\t-g         Generate summary info for autograder.\n");
     fprintf(stderr, "\t-h         Print this message.\n");
