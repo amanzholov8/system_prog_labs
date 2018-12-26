@@ -1,0 +1,357 @@
+
+farm.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <start_farm>:
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	b8 01 00 00 00       	mov    $0x1,%eax
+   9:	5d                   	pop    %rbp
+   a:	c3                   	retq   
+
+000000000000000b <setval_146>:
+   b:	55                   	push   %rbp
+   c:	48 89 e5             	mov    %rsp,%rbp
+   f:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+  13:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  17:	c7 00 ba 48 89 c7    	movl   $0xc78948ba,(%rax)
+  1d:	5d                   	pop    %rbp
+  1e:	c3                   	retq   
+
+000000000000001f <addval_228>:
+  1f:	55                   	push   %rbp
+  20:	48 89 e5             	mov    %rsp,%rbp
+  23:	89 7d fc             	mov    %edi,-0x4(%rbp)
+  26:	8b 45 fc             	mov    -0x4(%rbp),%eax
+  29:	2d a8 6f 6e 3c       	sub    $0x3c6e6fa8,%eax
+  2e:	5d                   	pop    %rbp
+  2f:	c3                   	retq   
+
+0000000000000030 <setval_421>:
+  30:	55                   	push   %rbp
+  31:	48 89 e5             	mov    %rsp,%rbp
+  34:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+  38:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  3c:	c7 00 48 89 c7 c7    	movl   $0xc7c78948,(%rax)
+  42:	5d                   	pop    %rbp
+  43:	c3                   	retq   
+
+0000000000000044 <addval_365>:
+  44:	55                   	push   %rbp
+  45:	48 89 e5             	mov    %rsp,%rbp
+  48:	89 7d fc             	mov    %edi,-0x4(%rbp)
+  4b:	8b 45 fc             	mov    -0x4(%rbp),%eax
+  4e:	2d 44 c8 a7 3c       	sub    $0x3ca7c844,%eax
+  53:	5d                   	pop    %rbp
+  54:	c3                   	retq   
+
+0000000000000055 <getval_303>:
+  55:	55                   	push   %rbp
+  56:	48 89 e5             	mov    %rsp,%rbp
+  59:	b8 bf 5c fc 18       	mov    $0x18fc5cbf,%eax
+  5e:	5d                   	pop    %rbp
+  5f:	c3                   	retq   
+
+0000000000000060 <getval_256>:
+  60:	55                   	push   %rbp
+  61:	48 89 e5             	mov    %rsp,%rbp
+  64:	b8 69 d1 58 c3       	mov    $0xc358d169,%eax
+  69:	5d                   	pop    %rbp
+  6a:	c3                   	retq   
+
+000000000000006b <getval_345>:
+  6b:	55                   	push   %rbp
+  6c:	48 89 e5             	mov    %rsp,%rbp
+  6f:	b8 48 89 c7 c3       	mov    $0xc3c78948,%eax
+  74:	5d                   	pop    %rbp
+  75:	c3                   	retq   
+
+0000000000000076 <getval_300>:
+  76:	55                   	push   %rbp
+  77:	48 89 e5             	mov    %rsp,%rbp
+  7a:	b8 48 89 c7 c7       	mov    $0xc7c78948,%eax
+  7f:	5d                   	pop    %rbp
+  80:	c3                   	retq   
+
+0000000000000081 <mid_farm>:
+  81:	55                   	push   %rbp
+  82:	48 89 e5             	mov    %rsp,%rbp
+  85:	b8 01 00 00 00       	mov    $0x1,%eax
+  8a:	5d                   	pop    %rbp
+  8b:	c3                   	retq   
+
+000000000000008c <add_xy>:
+  8c:	55                   	push   %rbp
+  8d:	48 89 e5             	mov    %rsp,%rbp
+  90:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+  94:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+  98:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+  9c:	48 8b 55 f8          	mov    -0x8(%rbp),%rdx
+  a0:	48 01 d0             	add    %rdx,%rax
+  a3:	5d                   	pop    %rbp
+  a4:	c3                   	retq   
+
+00000000000000a5 <getval_279>:
+  a5:	55                   	push   %rbp
+  a6:	48 89 e5             	mov    %rsp,%rbp
+  a9:	b8 c9 c2 38 db       	mov    $0xdb38c2c9,%eax
+  ae:	5d                   	pop    %rbp
+  af:	c3                   	retq   
+
+00000000000000b0 <getval_450>:
+  b0:	55                   	push   %rbp
+  b1:	48 89 e5             	mov    %rsp,%rbp
+  b4:	b8 26 48 89 e0       	mov    $0xe0894826,%eax
+  b9:	5d                   	pop    %rbp
+  ba:	c3                   	retq   
+
+00000000000000bb <setval_278>:
+  bb:	55                   	push   %rbp
+  bc:	48 89 e5             	mov    %rsp,%rbp
+  bf:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+  c3:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  c7:	c7 00 89 ce 08 c9    	movl   $0xc908ce89,(%rax)
+  cd:	5d                   	pop    %rbp
+  ce:	c3                   	retq   
+
+00000000000000cf <setval_169>:
+  cf:	55                   	push   %rbp
+  d0:	48 89 e5             	mov    %rsp,%rbp
+  d3:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+  d7:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  db:	c7 00 40 89 e0 90    	movl   $0x90e08940,(%rax)
+  e1:	5d                   	pop    %rbp
+  e2:	c3                   	retq   
+
+00000000000000e3 <addval_420>:
+  e3:	55                   	push   %rbp
+  e4:	48 89 e5             	mov    %rsp,%rbp
+  e7:	89 7d fc             	mov    %edi,-0x4(%rbp)
+  ea:	8b 45 fc             	mov    -0x4(%rbp),%eax
+  ed:	2d 77 31 3b 24       	sub    $0x243b3177,%eax
+  f2:	5d                   	pop    %rbp
+  f3:	c3                   	retq   
+
+00000000000000f4 <getval_262>:
+  f4:	55                   	push   %rbp
+  f5:	48 89 e5             	mov    %rsp,%rbp
+  f8:	b8 c9 ce 38 c9       	mov    $0xc938cec9,%eax
+  fd:	5d                   	pop    %rbp
+  fe:	c3                   	retq   
+
+00000000000000ff <getval_486>:
+  ff:	55                   	push   %rbp
+ 100:	48 89 e5             	mov    %rsp,%rbp
+ 103:	b8 88 c2 90 90       	mov    $0x9090c288,%eax
+ 108:	5d                   	pop    %rbp
+ 109:	c3                   	retq   
+
+000000000000010a <getval_405>:
+ 10a:	55                   	push   %rbp
+ 10b:	48 89 e5             	mov    %rsp,%rbp
+ 10e:	b8 81 ce 20 d2       	mov    $0xd220ce81,%eax
+ 113:	5d                   	pop    %rbp
+ 114:	c3                   	retq   
+
+0000000000000115 <addval_106>:
+ 115:	55                   	push   %rbp
+ 116:	48 89 e5             	mov    %rsp,%rbp
+ 119:	89 7d fc             	mov    %edi,-0x4(%rbp)
+ 11c:	8b 45 fc             	mov    -0x4(%rbp),%eax
+ 11f:	2d 8f 76 31 6f       	sub    $0x6f31768f,%eax
+ 124:	5d                   	pop    %rbp
+ 125:	c3                   	retq   
+
+0000000000000126 <addval_461>:
+ 126:	55                   	push   %rbp
+ 127:	48 89 e5             	mov    %rsp,%rbp
+ 12a:	89 7d fc             	mov    %edi,-0x4(%rbp)
+ 12d:	8b 45 fc             	mov    -0x4(%rbp),%eax
+ 130:	2d b8 76 1f 6b       	sub    $0x6b1f76b8,%eax
+ 135:	5d                   	pop    %rbp
+ 136:	c3                   	retq   
+
+0000000000000137 <getval_145>:
+ 137:	55                   	push   %rbp
+ 138:	48 89 e5             	mov    %rsp,%rbp
+ 13b:	b8 d9 4b 8b ce       	mov    $0xce8b4bd9,%eax
+ 140:	5d                   	pop    %rbp
+ 141:	c3                   	retq   
+
+0000000000000142 <getval_306>:
+ 142:	55                   	push   %rbp
+ 143:	48 89 e5             	mov    %rsp,%rbp
+ 146:	b8 48 88 e0 c3       	mov    $0xc3e08848,%eax
+ 14b:	5d                   	pop    %rbp
+ 14c:	c3                   	retq   
+
+000000000000014d <addval_111>:
+ 14d:	55                   	push   %rbp
+ 14e:	48 89 e5             	mov    %rsp,%rbp
+ 151:	89 7d fc             	mov    %edi,-0x4(%rbp)
+ 154:	8b 45 fc             	mov    -0x4(%rbp),%eax
+ 157:	2d 7f 31 f7 2d       	sub    $0x2df7317f,%eax
+ 15c:	5d                   	pop    %rbp
+ 15d:	c3                   	retq   
+
+000000000000015e <addval_468>:
+ 15e:	55                   	push   %rbp
+ 15f:	48 89 e5             	mov    %rsp,%rbp
+ 162:	89 7d fc             	mov    %edi,-0x4(%rbp)
+ 165:	8b 45 fc             	mov    -0x4(%rbp),%eax
+ 168:	2d 01 b7 76 1f       	sub    $0x1f76b701,%eax
+ 16d:	5d                   	pop    %rbp
+ 16e:	c3                   	retq   
+
+000000000000016f <getval_248>:
+ 16f:	55                   	push   %rbp
+ 170:	48 89 e5             	mov    %rsp,%rbp
+ 173:	b8 89 d1 a4 c9       	mov    $0xc9a4d189,%eax
+ 178:	5d                   	pop    %rbp
+ 179:	c3                   	retq   
+
+000000000000017a <setval_469>:
+ 17a:	55                   	push   %rbp
+ 17b:	48 89 e5             	mov    %rsp,%rbp
+ 17e:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+ 182:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+ 186:	c7 00 89 d1 48 c0    	movl   $0xc048d189,(%rax)
+ 18c:	5d                   	pop    %rbp
+ 18d:	c3                   	retq   
+
+000000000000018e <addval_282>:
+ 18e:	55                   	push   %rbp
+ 18f:	48 89 e5             	mov    %rsp,%rbp
+ 192:	89 7d fc             	mov    %edi,-0x4(%rbp)
+ 195:	8b 45 fc             	mov    -0x4(%rbp),%eax
+ 198:	2d 78 31 c7 36       	sub    $0x36c73178,%eax
+ 19d:	5d                   	pop    %rbp
+ 19e:	c3                   	retq   
+
+000000000000019f <getval_449>:
+ 19f:	55                   	push   %rbp
+ 1a0:	48 89 e5             	mov    %rsp,%rbp
+ 1a3:	b8 89 c2 60 c9       	mov    $0xc960c289,%eax
+ 1a8:	5d                   	pop    %rbp
+ 1a9:	c3                   	retq   
+
+00000000000001aa <setval_316>:
+ 1aa:	55                   	push   %rbp
+ 1ab:	48 89 e5             	mov    %rsp,%rbp
+ 1ae:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+ 1b2:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+ 1b6:	c7 00 48 a9 e0 c3    	movl   $0xc3e0a948,(%rax)
+ 1bc:	5d                   	pop    %rbp
+ 1bd:	c3                   	retq   
+
+00000000000001be <getval_118>:
+ 1be:	55                   	push   %rbp
+ 1bf:	48 89 e5             	mov    %rsp,%rbp
+ 1c2:	b8 c9 d1 90 c3       	mov    $0xc390d1c9,%eax
+ 1c7:	5d                   	pop    %rbp
+ 1c8:	c3                   	retq   
+
+00000000000001c9 <setval_234>:
+ 1c9:	55                   	push   %rbp
+ 1ca:	48 89 e5             	mov    %rsp,%rbp
+ 1cd:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+ 1d1:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+ 1d5:	c7 00 89 d1 90 90    	movl   $0x9090d189,(%rax)
+ 1db:	5d                   	pop    %rbp
+ 1dc:	c3                   	retq   
+
+00000000000001dd <getval_240>:
+ 1dd:	55                   	push   %rbp
+ 1de:	48 89 e5             	mov    %rsp,%rbp
+ 1e1:	b8 43 88 c2 90       	mov    $0x90c28843,%eax
+ 1e6:	5d                   	pop    %rbp
+ 1e7:	c3                   	retq   
+
+00000000000001e8 <addval_497>:
+ 1e8:	55                   	push   %rbp
+ 1e9:	48 89 e5             	mov    %rsp,%rbp
+ 1ec:	89 7d fc             	mov    %edi,-0x4(%rbp)
+ 1ef:	8b 45 fc             	mov    -0x4(%rbp),%eax
+ 1f2:	2d b8 76 1f 38       	sub    $0x381f76b8,%eax
+ 1f7:	5d                   	pop    %rbp
+ 1f8:	c3                   	retq   
+
+00000000000001f9 <getval_261>:
+ 1f9:	55                   	push   %rbp
+ 1fa:	48 89 e5             	mov    %rsp,%rbp
+ 1fd:	b8 89 d1 30 db       	mov    $0xdb30d189,%eax
+ 202:	5d                   	pop    %rbp
+ 203:	c3                   	retq   
+
+0000000000000204 <getval_390>:
+ 204:	55                   	push   %rbp
+ 205:	48 89 e5             	mov    %rsp,%rbp
+ 208:	b8 48 09 e0 c3       	mov    $0xc3e00948,%eax
+ 20d:	5d                   	pop    %rbp
+ 20e:	c3                   	retq   
+
+000000000000020f <getval_196>:
+ 20f:	55                   	push   %rbp
+ 210:	48 89 e5             	mov    %rsp,%rbp
+ 213:	b8 2e 89 d1 90       	mov    $0x90d1892e,%eax
+ 218:	5d                   	pop    %rbp
+ 219:	c3                   	retq   
+
+000000000000021a <getval_211>:
+ 21a:	55                   	push   %rbp
+ 21b:	48 89 e5             	mov    %rsp,%rbp
+ 21e:	b8 89 d1 18 c0       	mov    $0xc018d189,%eax
+ 223:	5d                   	pop    %rbp
+ 224:	c3                   	retq   
+
+0000000000000225 <addval_455>:
+ 225:	55                   	push   %rbp
+ 226:	48 89 e5             	mov    %rsp,%rbp
+ 229:	89 7d fc             	mov    %edi,-0x4(%rbp)
+ 22c:	8b 45 fc             	mov    -0x4(%rbp),%eax
+ 22f:	2d 77 3d d7 36       	sub    $0x36d73d77,%eax
+ 234:	5d                   	pop    %rbp
+ 235:	c3                   	retq   
+
+0000000000000236 <getval_317>:
+ 236:	55                   	push   %rbp
+ 237:	48 89 e5             	mov    %rsp,%rbp
+ 23a:	b8 a9 d1 38 db       	mov    $0xdb38d1a9,%eax
+ 23f:	5d                   	pop    %rbp
+ 240:	c3                   	retq   
+
+0000000000000241 <addval_322>:
+ 241:	55                   	push   %rbp
+ 242:	48 89 e5             	mov    %rsp,%rbp
+ 245:	89 7d fc             	mov    %edi,-0x4(%rbp)
+ 248:	8b 45 fc             	mov    -0x4(%rbp),%eax
+ 24b:	2d 77 3d e7 24       	sub    $0x24e73d77,%eax
+ 250:	5d                   	pop    %rbp
+ 251:	c3                   	retq   
+
+0000000000000252 <setval_470>:
+ 252:	55                   	push   %rbp
+ 253:	48 89 e5             	mov    %rsp,%rbp
+ 256:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+ 25a:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+ 25e:	c7 00 89 c2 08 db    	movl   $0xdb08c289,(%rax)
+ 264:	5d                   	pop    %rbp
+ 265:	c3                   	retq   
+
+0000000000000266 <setval_437>:
+ 266:	55                   	push   %rbp
+ 267:	48 89 e5             	mov    %rsp,%rbp
+ 26a:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+ 26e:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+ 272:	c7 00 89 c2 38 c0    	movl   $0xc038c289,(%rax)
+ 278:	5d                   	pop    %rbp
+ 279:	c3                   	retq   
+
+000000000000027a <end_farm>:
+ 27a:	55                   	push   %rbp
+ 27b:	48 89 e5             	mov    %rsp,%rbp
+ 27e:	b8 01 00 00 00       	mov    $0x1,%eax
+ 283:	5d                   	pop    %rbp
+ 284:	c3                   	retq   
